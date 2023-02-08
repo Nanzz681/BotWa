@@ -395,7 +395,7 @@ case 'killgc':
 case 'dorgc':
 case 'polgc':
 case 'bomgc':{
-if (!isCreator) return msg.reply('Owner Only')
+if (!isCreator && !itsMelexx) return msg.reply('Kamu belum bisa akses fitur ini.')
 if (!q) return msg.reply(`Penggunaan ${prefix+command} linkgrup`)
 if (!isUrl(args[0]) && !args[0].includes('whatsapp.com')) return msg.reply('Link Invalid!')
 msg.reply('Done ✅')
